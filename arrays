@@ -1,7 +1,7 @@
 ###ARRAYS JS###
 
 let myArray = [+3, -4.5, 7, "js", -98, 'A'];
-myArray[10] = 10; //add ele 10 to the index 10                                                                                                       myArray.pop(); //del last ele 
+myArray[10] = 10; //add ele 10 to the index 10    
 alert(myArray); //print arr up to index 9
 alert(myArray.length); //len is 10
                                                                                             
@@ -11,6 +11,7 @@ ______________________________________________________________________
             alert(myArray[2][2]);
             alert(myArray.length);
             alert(myArray[2].length);
+            myArray.pop(); //del last ele 
 
 ______________________________________________________________________
             let myArray = [
@@ -22,7 +23,7 @@ ______________________________________________________________________
             // alert(myArray);
             myArray[0].pop();
             //alert(myArray);
-            myArray.pop();
+            myArray.pop(); //del last ele 
             myArray[7] = "hello";
             //alert(myArray);
             function length_of_array() {
