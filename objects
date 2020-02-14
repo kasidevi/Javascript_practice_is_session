@@ -99,4 +99,65 @@ let tyre1 = {
             alert(car.tyresList);
             alert(car.start) //o/p started
 
+______________________________________________________________________________________________
+
+            function startCar() {
+                return "car started";
+            }
+
+            function stopCar() {
+                return "car stopped";
+            }
+            //alert(startCar());
+            let car1 = {
+                type: "swiz",
+                model: "tube",
+                start: startCar,
+                stop: stopCar(),
+            };
+            alert(car1.start());
+            let car2 = {
+                type: "Audi",
+                model: "plaza",
+                start: startCar,
+                stop: stopCar(),
+            };
+            alert(car2.stop());
+            alert(car2.hasOwnProperty("start")); //return boolean value
+       ____________________________________________________________________________________________________________     
+            //create person object
+            let person = {
+                firstName: "Devi",
+                lastName: "Sri",
+                age: "22",
+                gender: "Female",
+                experience: '12 years',
+            };
+            //Create bus object
+            let bus = {
+                owner: "kallada travells",
+                color: "red",
+                type: "AC",
+                'seating capacity': 45,
+                start() {
+                    return "started";
+                },
+                stop() {
+                    return "stopped";
+                },
+                driver: person,
+            };
+            // alert(bus.owner);
+            bus.owner = 'Morning star';
+            // alert(bus.owner);
+            // alert(bus.driver.age);
+            delete(bus.driver.age);
+            //  alert(bus.driver.age);
+            bus.driver.fullname = bus.driver['firstName'] + bus.driver['lastName'];
+            alert(bus.driver.fullname);
+
+
+            
+
+
        
