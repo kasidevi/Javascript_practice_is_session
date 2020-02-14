@@ -1,0 +1,207 @@
+      /*let a;
+            alert(a);*/
+
+     /*  let name, copiedName;
+               name = "John";
+               copiedName = name;
+               alert(copiedName);*/
+
+           
+            /*what ever we give type string*/
+            /*function type_of(a) {
+                return typeof(a);
+            }
+            let a;
+            alert(type_of(prompt(a)));*/
+
+            /*function type_of(a) {
+                alert(typeof(a));
+            }
+            let a;
+            type_of(a);
+            type_of('name');
+            type_of(-225);
+            type_of(2.5);*/
+
+            /*  function wishes(a) {
+                  return `Congratulations ${a}`;
+              }
+              let a;
+              alert(wishes(prompt(a)));*/
+
+            /* function swap(a, b) {
+                 let c;
+                 c = a;
+                 a = b;
+                 b = c;
+                 return `${a} ${b}`;
+             }
+             let a, b;
+             alert(swap(prompt(a), prompt(b)));*/
+
+            /*function swap(a, b) {
+            //    a = parseInt(a) + parseInt(b);
+              //  alert(parseInt(a));
+                return `${b} ${a}`;
+            }
+            let a, b;
+            alert(swap(prompt(a), prompt(b)));*/
+
+            /*   function avg(a, b) {
+                   a = Number(a);
+                   b = Number(b);
+                   return (a + b) / 2;
+               }
+               let a, b;
+               alert(avg(prompt(a), prompt(b)));*/
+
+            /*function costprice(sp, profit) {
+                sp = Number(sp);
+                profit = Number(profit);
+                return (sp - profit) / 15;
+
+            }
+            let sp, profit;
+            alert(costprice(prompt(sp), prompt(profit)));*/
+
+            /*  function total_marks_percentage(a, b, c, d, e) {
+                  a = Number(a);
+                  b = Number(b);
+                  c = Number(c);
+                  d = Number(d);
+                  e = Number(e);
+                  return `Total:${a+b+c+d+e}, Percentage:${(a+b+c+d+e)/500*100}`;
+              }
+              let a, b, c, d, e;
+              alert(total_marks_percentage(prompt(a), prompt(b), prompt(c), prompt(d), prompt(e)));*/
+
+            /*  function area_of_triangle(height, base) {
+                  height = Number(height);
+                  base = Number(base);
+                  return `${height/2*base}`;
+              }
+              let height, base;
+              alert(area_of_triangle(prompt(height), prompt(base)));*/
+
+            /*  function area_of_circle(radius) {
+                  let pi = 3.14;
+                  radius = Number(radius);
+                  return `${pi*radius**2}`;
+              }
+              let radius;
+              alert(area_of_circle(prompt(radius)));*/
+
+            /*  function area_of_circle(perimeter) {
+                  let pi = 3.14;
+                  perimeter = Number(perimeter);
+                  let r = perimeter / (2 * pi);
+                  return `${pi*r*r}`;
+              }
+              let perimeter;
+              alert(area_of_circle(prompt(perimeter)));*/
+
+            /*function area_of_circle(perimeter_of_circle, length_of_rectangle) {
+                let pi = 3.14;
+                let r = perimeter_of_circle / (2 * pi);
+
+                return `${pi*r*r/length_of_rectangle}`;
+            }
+            alert(area_of_circle(25.12, 5));*/
+
+            /* function fahrenheit(temperature) {
+                 return ((temperature - 32) * (5 / 9));
+             }
+             alert(fahrenheit(-373));*/
+
+            /* function celsius_to_fahrenheit(temperature) {
+                 return (32 + temperature * (9 / 5));
+             }
+             alert(celsius_to_fahrenheit(-225));*/
+
+            /* function avg_employee_pay_per_month(hours_worked, per_hour_pay) {
+                 return `${(hours_worked/12)*per_hour_pay}`;
+             }
+             alert(avg_employee_pay_per_month(120, 5000));
+             */
+
+           /* function convert(year, month, week, days) {
+                let years, months, weeks;
+                years = parseInt(year / 365);
+                months = parseInt((year % 365) / 30);
+                weeks = parseInt(((year % 365) % 30) / 7);
+                days = ((year % 365) % 30) % 7;
+                return `Years:${years}, Months:${months}, Weeks:${weeks}, Days:${days}`;
+            }
+            alert(convert(385));*/
+
+function convert(year, month, week, days) {
+                return `${year*365+month*30+week*7+days}`;
+            }
+            alert(convert(10, 7, 3, 3));
+
+
+  /*function convert(year, month, week, days) {
+                 return `${year*365+month*30+week*7+days}`;
+                }
+                 alert(convert(10, 7, 3, 3));*/
+
+
+            /*   function convert(hundred, fifty, twenty, ten) {
+                   let hundreds, fifties, twenties, tens;
+                   hundreds = parseInt(h / 100);
+                   fifties= parseInt((h % 100) / 50);
+                   twenties = parseInt(((h % 100) % 50) / 20);
+                   tens = (((h % 100) % 50) % 20) / 10;
+                   return `100 notes count:${hundreds}, 50 notes count:${fifties}, 20 notes count:${twenties}, 10 notes count:${tens}`;
+               }
+               alert(convert(680));*/
+
+/*cricket strike rate in javascript*/
+  function strike_rate(runs, balls_played) {
+                return `${(runs/balls_played)*100}`;
+            }
+            alert(strike_rate(21, 14));
+
+/*cricket strike rate in javascript*/
+            function strike_rate(target) {
+                return `${target/50}`;
+            }
+            alert(strike_rate(300));
+
+
+/*n no.of handshakes in javascript*/
+function handshakes(no_of_people) {
+                return `${parseInt((no_of_people*(no_of_people-1))/2)}`;
+            }
+            let no_of_people;
+            alert(handshakes(prompt(no_of_people)));
+
+
+/*sum of squares in javascript*/
+function sum_of_squares(a, b, c, d, e) {
+                return `${Math.pow(a,2)+Math.pow(b,2)+Math.pow(c,2)+Math.pow(d,2)+Math.pow(e,2)}`;
+            }
+            alert(sum_of_squares(2, 4, 45, 0, 5));
+
+
+/*concatinating strings in javascript*/
+function sum_of_squares(a, b) {
+            return `${a+b}`;
+            }
+           alert(sum_of_squares("name", "first devi"));
+
+
+/*modulus operator in javascript*/
+            function modulus(a, b) {
+                 return `${a%b}`;
+             }
+
+             alert(modulus(12, 5));
+
+
+/*increment operator in javascript*/
+            function increment(a) {
+                a--;
+                return `${a}`;
+            }
+            alert(increment(10));
