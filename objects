@@ -1,0 +1,95 @@
+JS OBJECTS:
+
+            let car = {
+                color: "silver"
+            };
+            alert(car);
+___________________________________
+            let car = {
+                color: "silver",
+                model: "audi",
+                weight: "800 kg",
+                'fuel type':"petrol" //while 2words as a key we can use _ or ''.
+            };
+            alert(car);
+___________________________________
+
+ let car = {
+                color: "silver",
+                model: "audi",
+                weight: "800 kg",
+                'fuel type': "petrol" //while 2words as a key we can use _ or ''.
+            };
+            alert(car['color']); //return silver
+            alert(car.color); //return silver
+
+            //  alert(car.'fuel type');  //error
+            alert(car['fuel type']); //return petrol
+
+            let Color = car['color'];
+            alert(Color); //return silver
+
+            let carWeight = 'weight';
+            alert(car[carWeight]);
+            
+          car.color = "red"; //color change silver to red
+            alert(car['color']);
+_______________________________________
+
+  let car = {
+                color: "silver",
+                model: "audi",
+                weight: "800 kg",
+                'fuel type': "petrol" //while 2words as a key we can use _ or ''.
+            };
+            car.model = "ciaz";
+            //  alert(car['model']);
+            //  alert(car.model);
+            car.fuelCapacity = "43 liters"; //update if this is not in car object
+            //   alert(car.fuelCapacity);
+            delete car.weight; //delete weight from car
+            // alert(car.weight);
+            delete car["fuel type"];
+            alert(car["fuel type"]);
+_____________________________________________________
+ //nested objects
+            let car = {
+                color: "red",
+                model: "ciaz",
+                fuelCapacity: "43 liters",
+                // tyre:tyre
+
+                tyre: {
+                    brand: "MRF",
+                    type: "tube less",
+                    rimDiameter: "17 Inches",
+                }
+            };
+            alert(car.tyre.type);
+//above data Accessing in 4 ways
+  alert(car.tyre['type']); //outer obj,inner obj, property.
+            alert(car.tyre.type);
+            alert(car['tyre']['type']);
+            alert(car['tyre'].type);
+_______________________________________________
+let tyre1 = {
+                brand: "MRF",
+                type: "tube less",
+                rimDiameter: "17 Inches",
+            };
+            let tyre2 = {
+
+                brand: "audi",
+                type: "tube",
+            };
+            let car = {
+                color: "red",
+                model: "ciaz",
+                fuelCapacity: "43 liters",
+                tyre: tyre1,
+                tyresList: [tyre1, tyre2] //list of objects
+            };
+            alert(car.tyresList[1].brand);  //accessing tyre1 from car(main obj)->tyresList(inner obj as list)->tyre1(obj in list)->brand(property)
+            alert(car.tyresList);
+
+       
