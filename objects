@@ -88,8 +88,15 @@ let tyre1 = {
                 fuelCapacity: "43 liters",
                 tyre: tyre1,
                 tyresList: [tyre1, tyre2] //list of objects
+                start: function(){  //also write as start(){ return "started";} also stop().
+                return "started";
+                },
+                stop: function(){
+                return "stop";
+                },
             };
             alert(car.tyresList[1].brand);  //accessing tyre1 from car(main obj)->tyresList(inner obj as list)->tyre1(obj in list)->brand(property)
             alert(car.tyresList);
+            alert(car.start) //o/p started
 
        
