@@ -1,0 +1,54 @@
+https://www.w3schools.com/code/tryit.asp?filename=GCDEZX5MM3BS //saved in this link(w3schools) 
+
+.activeBlue {
+    transform: rotate(-90deg);
+
+}
+
+.activeGreen {
+    transform: rotate(90deg);
+}
+.activeRed {
+    transform: rotate(90deg);
+}
+</style>
+    </head>
+    <body>
+       
+        <div class="main" id="main">
+            <div>
+                <div class="red" id="red"></div>
+                <div class="blue" id="blue"></div>
+            </div>
+             <p class="hi-position" id="hiPosition">Hii!..</p>
+            <div>
+                <div class="yellow" id="yellow"></div>
+                <div class="green" id="green"></div>
+            </div>
+        </div>
+        <script>
+        const redEle=document.getElementById('red');
+        const blueEle=document.getElementById('blue');
+    const yellowEle=document.getElementById('yellow');
+     const greenEle=document.getElementById('green');
+     const hiText=document.getElementById('hiPosition');
+     
+     document.ontouchstart=()=>{
+     redEle.classList.add('activeRed');
+     blueEle.classList.add('activeBlue');
+     yellowEle.classList.add('activeYellow');
+     greenEle.classList.add('activeGreen');
+     hiText.style.display="flex";
+     }
+     document.ontouchend=()=>{
+     redEle.classList.remove('activeRed');
+     blueEle.classList.remove('activeBlue');
+     yellowEle.classList.remove('activeYellow');
+     greenEle.classList.remove('activeGreen');
+     hiText.style.display="none";
+  
+     }
+        </script>
+    </body>
+
+</html>
