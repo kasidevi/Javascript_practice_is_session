@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Basics</title>
+        <link rel="stylesheet" href="animations.css" type="text/css" />
+        <style>
+        
+div {
+    width: 100px;
+    height: 100px;
+    background-color: thistle;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+        background-color: thistle;
+        width: 100px;
+    }
+    50% {
+        top: 100px;
+        background-color: mistyrose;
+        width: 200px;
+    }
+    100% {
+        top: 200px;
+        background-color: coral;
+        width: 300px;
+    }
+}
+</style>
+    </head>
+
+    <body>
+
+        <div class="using-keyframes"></div>
+    </body>
+
+</html>
