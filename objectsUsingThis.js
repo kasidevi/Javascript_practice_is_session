@@ -122,3 +122,105 @@ a:hyundai
 b:hyundai 
 c:hyundai 
 d:hyundai 
+
+//Night session by chinmai sir
+  function Person() {
+                this.firstName = "ram";
+                this.lastName = 'Gupta';
+                this.fullName = function() {
+                    return this.firstName + this.lastName;
+                };
+            }
+            const personTwo = new Person();
+            console.log(personTwo);
+            console.log(personTwo.fullName());
+        o/p-->Person {firstName: "ram", lastName: "Gupta", fullName: function ()}
+              ramGupta
+//__________________________________________________________________________________________
+            function Person() {
+                this.gender = 'female';
+                return {
+                    firstName: 'ram',
+                    lastName: 'Gupta',
+                    fullName: function() {
+                        return this.firstName + this.lastName;
+                    }
+                };
+            }
+            const personTwo = new Person();
+            console.log(personTwo);
+            console.log(personTwo.fullName());
+            console.log(personTwo.gender);
+                      
+o/p->Object {firstName: "ram", lastName: "Gupta", fullName: function fullName()}
+ramGupta 
+undefined
+//__________________________________________________________________________________________
+            function ClassRoom(roomNumber, studentStrength) {
+                this.roomNumber = roomNumber;
+                this.studentStrength = studentStrength;
+                this.sessionStatus = 'Teaching'; //practice,exam,break,teaching
+                this.fansStatus = 'ON'; //ON,OFF
+                this.areFansRunning = true;
+                this.areACsRunning = false;
+                this.isSoundSystemOn = false;
+                this.switchOnPowerEquipment = function() {
+                    this.areACsRunning = true;
+                    this.fansStatus = 'OFF'; //ON,OFF
+                    this.isSoundSystemOn = true;
+                };
+                this.switchOffPowerEquipment = function() {
+                    this.areACsRunning = false;
+                    this.fansStatus = 'OFF'; //ON,OFF
+                    this.isSoundSystemOn = false;
+                };
+                this.startTeachingSession = function() {
+                    this.switchOnPowerEquipment();
+                    this.sessionStatus = "TEACHING";
+                };
+
+                this.stopTeachingSession = function() {
+                    this.switchOffPowerEquipment();
+                    this.sessionStatus = "OFF";
+                };
+            }
+            const classRoom1 = new ClassRoom(1, 65);
+            console.log(classRoom1);
+            const classRoom2 = new ClassRoom(2, 78);
+                      
+         o/p=>ClassRoom {roomNumber: 1, studentStrength: 65, sessionStatus: "Teaching", fansStatus: "ON", areFansRunning: true…} 
+              roomNumber: 1
+ studentStrength: 65
+ sessionStatus: "Teaching"
+ fansStatus: "ON"
+ areFansRunning: true
+ areACsRunning: false
+ isSoundSystemOn: false
+ switchOnPowerEquipment: function () {}
+ switchOffPowerEquipment: function () {}
+ startTeachingSession: function () {}
+ stopTeachingSession: function () {}
+//__________________________________________________________________________________________
+            class ClassRoomES6 {
+                constructor(roomNumber, studentStrength) {
+                    this.roomNumber = roomNumber;
+                    this.studentStrength = studentStrength;
+                    this.areACsRunning = true;
+                    this.fansStatus = 'ON';
+                    this.isSoundSystemOn = true;
+                }
+                switchOnPowerEquipment() {
+                    this.areACsRunning = true;
+                    this.fansStatus = 'ON';
+                    this.isSoundSystemOn = true;
+                }
+            }
+            const es6ClassRoom = new ClassRoomES6(3, 57);
+            console.log(es6ClassRoom);
+                      
+o/p->ClassRoomES6 {roomNumber: 3, studentStrength: 57, areACsRunning: true, fansStatus: "ON", isSoundSystemOn: true}
+ roomNumber: 3
+ studentStrength: 57
+ areACsRunning: true
+ fansStatus: "ON"
+ isSoundSystemOn: true
